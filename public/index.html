@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Core | Automated Infrastructure Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Outfit:wght@300;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%230a0c10%22/><path d=%22M20 50L50 80L80 50L50 20L20 50Z%22 stroke=%22%2306b6d4%22 stroke-width=%225%22 fill=%22none%22/></svg>">
+</head>
+<body>
+    <div class="console-container">
+        <!-- Sidebar Navigation -->
+        <nav class="side-nav">
+            <div class="nav-brand">
+                <div class="logo-box">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                </div>
+                <span>Cloud_Core</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-item active"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg> Infrastructure</a>
+                <a href="#" class="nav-item"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> Monitoring</a>
+                <a href="#" class="nav-item"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Pipelines</a>
+                <a href="#" class="nav-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg> Security</a>
+            </div>
+            <div class="nav-footer">
+                <div class="shield-indicator">
+                    <span class="dot green"></span> AUTO_SCALING_ON
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Desktop Area -->
+        <main class="main-desktop">
+            <header class="top-bar">
+                <div class="stats-group">
+                    <div class="stat">
+                        <span class="label">NODES</span>
+                        <h4 id="nodeCount">00</h4>
+                    </div>
+                    <div class="stat">
+                        <span class="label">AVG_LOAD</span>
+                        <h4 id="avgLoad">--%</h4>
+                    </div>
+                    <div class="stat">
+                        <span class="label">REGION</span>
+                        <h4>US-EAST-1</h4>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button id="scalingBtn" class="cta-outline">Simulate Peak Load</button>
+                    <button class="cta-primary">Deploy Cluster</button>
+                </div>
+            </header>
+
+            <!-- Workspace Scrollable -->
+            <div class="workspace-content">
+                <!-- Instance Matrix -->
+                <section class="section">
+                    <div class="section-header">
+                        <div class="title-wrap">
+                            <h3>Compute_Instances</h3>
+                            <span class="sub">Active Virtualized Nodes</span>
+                        </div>
+                    </div>
+                    <div id="instanceGrid" class="instance-grid">
+                        <!-- Dynamic Server Cards -->
+                    </div>
+                </section>
+
+                <div class="row">
+                    <!-- Real-Time Charts -->
+                    <section class="section flex-1">
+                        <div class="section-header"><h3>Network_Throughput</h3></div>
+                        <div class="chart-box glass-card">
+                            <canvas id="netChart"></canvas>
+                        </div>
+                    </section>
+
+                    <!-- Pipeline Visualizer -->
+                    <section class="section flex-1">
+                        <div class="section-header"><h3>Deployment_Pipeline</h3></div>
+                        <div class="pipeline-box glass-card">
+                            <div class="pipeline-flow">
+                                <div id="stepBuild" class="step active">BUILD</div>
+                                <div class="connector"><div class="line"></div></div>
+                                <div id="stepTest" class="step">TEST</div>
+                                <div class="connector"><div class="line"></div></div>
+                                <div id="stepDeploy" class="step">DEPLOY</div>
+                            </div>
+                            <div id="pipelineStatus" class="pipeline-status">READY: Awaiting deployment push...</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
