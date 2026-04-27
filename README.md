@@ -1,8 +1,8 @@
 # ☁️ Cloud-Core | Automated Infrastructure Console
 
-![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-success?style=for-the-badge&logo=statuspage)
-![Deployment](https://img.shields.io/badge/DEPLOYMENT-ACTIVE-blue?style=for-the-badge&logo=vercel)
-![License](https://img.shields.io/badge/LICENSE-MIT-blueviolet?style=for-the-badge)
+[![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-success?style=for-the-badge&logo=statuspage)](https://github.com/ayanlogix/cloud-core/commits/main)
+[![Deployment](https://img.shields.io/badge/DEPLOYMENT-ACTIVE-blue?style=for-the-badge&logo=vercel)](https://ayanlogix.github.io/cloud-core/)
+[![License](https://img.shields.io/badge/LICENSE-MIT-blueviolet?style=for-the-badge)](https://github.com/ayanlogix/cloud-core/blob/main/LICENSE)
 
 **Cloud-Core** is a high-performance infrastructure management console designed for monitoring and automating virtualized compute clusters. It provides a real-time, glassmorphic interface for infrastructure scaling, network throughput analysis, and CI/CD pipeline tracking.
 
