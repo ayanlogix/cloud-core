@@ -1,39 +1,59 @@
-# Cloud-Core | Automated Infrastructure Console
+# ☁️ Cloud-Core | Automated Infrastructure Console
 
-![Cloud-Core Preview](https://img.shields.io/badge/Ayanlogix-Cloud_Infra-blueviolet?style=for-the-badge)
-![Private](https://img.shields.io/badge/Status-Private-red?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-success?style=for-the-badge&logo=statuspage)
+![Deployment](https://img.shields.io/badge/DEPLOYMENT-ACTIVE-blue?style=for-the-badge&logo=vercel)
+![License](https://img.shields.io/badge/LICENSE-MIT-blueviolet?style=for-the-badge)
 
 **Cloud-Core** is a high-performance infrastructure management console designed for monitoring and automating virtualized compute clusters. It provides a real-time, glassmorphic interface for infrastructure scaling, network throughput analysis, and CI/CD pipeline tracking.
 
-## 🚀 Key Features
-- **Instance Matrix**: Dynamic grid visualization of virtualized compute nodes with real-time status updates.
-- **Auto-Scaling Simulation**: Interactive tool to simulate peak load and observe autonomous scaling responses.
-- **Network Throughput**: Real-time charting of inbound/outbound data flow and system latency.
-- **Pipeline Visualizer**: End-to-end tracking of build, test, and deployment stages for cloud-native applications.
-- **Consolidated Console**: Unified dashboard for Infrastructure, Monitoring, Pipelines, and Security.
+[🚀 LIVE DEMO](https://ayanlogix.github.io/cloud-core/) | [🔗 Portfolio](https://ayanlogix.dev)
 
-## 🛠️ Technical Stack
-- **Frontend**: Vanilla JavaScript (ES6+), HTML5, CSS3
-- **Visualization**: Canvas API & Chart.js for real-time telemetry
-- **Design**: IBM Plex Mono (Typography), Cyber-Dark Aesthetics, Glassmorphism
-- **Icons**: Custom SVG icons for infrastructure components
+---
 
-## 📁 Project Structure
-```bash
-cloud-core/
-├── public/
-│   ├── index.html   # Main console UI
-│   ├── style.css    # Infrastructure console styling
-│   └── script.js    # Telemetry & scaling logic
-└── README.md        # Documentation
-```
+## 🧠 Core Architecture
 
-## 📋 Installation
+Cloud-Core is engineered for **Infrastructure Supremacy.** It implements a custom telemetry layer to monitor high-density compute nodes with zero-latency visual feedback.
+
+### Key Technical Pillars:
+*   **Instance Matrix**: A modular grid visualization engine for tracking virtualized compute nodes with real-time state synchronization.
+*   **Auto-Scaling Simulation**: Integrated heuristic engine to simulate peak load and observe autonomous scaling responses.
+*   **Network Throughput Engine**: Real-time telemetry charting for inbound/outbound data flow and system latency.
+*   **Pipeline Visualizer**: End-to-end orchestration tracking for build, test, and deployment stages.
+
+---
+
+## 🛠️ Tech Stack
+
+*   **Engine**: Vanilla JavaScript (ES6+) with optimized DOM-orchestration.
+*   **Visualization**: Canvas API for real-time telemetry rendering.
+*   **UI/UX**: Custom CSS3 utilizing IBM Plex Mono and premium Glassmorphic design tokens.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+*   A modern web browser with hardware acceleration.
+*   Zero external dependencies.
+
+### Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/ayanlogix/cloud-core.git
    ```
-2. Open `public/index.html` in your browser.
+2. Navigate to the project directory:
+   ```bash
+   cd cloud-core
+   ```
+3. Open `index.html` in your browser.
 
 ---
-*Developed by **Ayan Hussain (Ayanlogix)** - Orchestrating the cloud.*
+
+## 🤝 Contributing
+We welcome contributions to the Cloud-Core engine! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+**Crafted with precision by [Ayan Hussain](https://ayanlogix.dev)**
